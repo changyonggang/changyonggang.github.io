@@ -1,0 +1,224 @@
+I"<ul id="markdown-toc">
+  <li><a href="#前端工具" id="markdown-toc-前端工具">前端工具</a></li>
+  <li><a href="#es2015" id="markdown-toc-es2015">ES2015</a></li>
+  <li><a href="#类库与插件" id="markdown-toc-类库与插件">类库与插件</a></li>
+  <li><a href="#框架" id="markdown-toc-框架">框架</a>    <ul>
+      <li><a href="#vue" id="markdown-toc-vue">Vue</a></li>
+      <li><a href="#react" id="markdown-toc-react">React</a></li>
+    </ul>
+  </li>
+  <li><a href="#模块化" id="markdown-toc-模块化">模块化</a></li>
+  <li><a href="#技巧" id="markdown-toc-技巧">技巧</a></li>
+  <li><a href="#编辑器" id="markdown-toc-编辑器">编辑器</a>    <ul>
+      <li><a href="#atom-中常用插件" id="markdown-toc-atom-中常用插件">Atom 中常用插件</a></li>
+    </ul>
+  </li>
+  <li><a href="#gitbook-及其插件" id="markdown-toc-gitbook-及其插件">GitBook 及其插件</a></li>
+  <li><a href="#chrome-插件" id="markdown-toc-chrome-插件">Chrome 插件</a></li>
+  <li><a href="#other-blogs" id="markdown-toc-other-blogs">Other blogs</a></li>
+  <li><a href="#comments" id="markdown-toc-comments">Comments</a></li>
+</ul>
+
+<h2 id="前端工具">前端工具</h2>
+
+<ul>
+  <li>
+    <p><a href="http://www.cssmatic.com/box-shadow">box-shadow generator</a></p>
+
+    <p>生成 box-shadow 的工具。</p>
+  </li>
+  <li>
+    <p><a href="http://www.cssmatic.com/gradient-generator">gradient-generator</a></p>
+
+    <p>渐变生成器。</p>
+  </li>
+  <li>
+    <p><a href="http://www.colorzilla.com/gradient-editor/">Ultimate CSS Gradient Generator</a></p>
+
+    <p>也是渐变生成器</p>
+  </li>
+  <li>
+    <p><a href="http://www.cssreflex.com/css-generators/">CSS Generators -CSSREFLEX</a></p>
+
+    <p>CSS3 生成器</p>
+  </li>
+</ul>
+
+<h2 id="es2015">ES2015</h2>
+
+<ul>
+  <li>
+    <p><a href="http://www.ecma-international.org/ecma-262/6.0/">http://www.ecma-international.org/ecma-262/6.0/</a></p>
+
+    <p>ES2015规范</p>
+  </li>
+  <li>
+    <p><a href="http://segmentfault.com/a/1190000004365693">30分钟掌握ES6/ES2015核心内容（上）</a></p>
+  </li>
+  <li>
+    <p><a href="http://segmentfault.com/a/1190000004368132">30分钟掌握ES6/ES2015核心内容（下）</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/ruanyf/es6tutorial">《ECMAScript 6入门》 -阮一峰</a></p>
+  </li>
+</ul>
+
+<h2 id="类库与插件">类库与插件</h2>
+
+<ul>
+  <li>
+    <p><a href="http://masonry.desandro.com/">Masonry</a></p>
+
+    <p>瀑布流布局库。</p>
+  </li>
+  <li>
+    <p><a href="http://www.jssor.com/">jssor</a></p>
+
+    <p>图片轮播图其 GitHub 地址 <a href="https://github.com/jssor/slider">jssor/slider</a></p>
+  </li>
+  <li>
+    <p><a href="http://cssslider.com/">cssslider</a></p>
+
+    <p>纯 CSS 的图片轮播图。</p>
+  </li>
+</ul>
+
+<h2 id="框架">框架</h2>
+
+<h3 id="vue">Vue</h3>
+
+<ul>
+  <li><a href="https://github.com/vuejs/awesome-vue">awesome-vue</a></li>
+  <li><a href="http://djyde.github.io/2015/08/29/vuejs-and-webpack-1/">Vue.js 和 Webpack（一） -Randy Lu</a></li>
+  <li><a href="http://djyde.github.io/2015/08/30/vuejs-and-webpack-2/">Vue.js 和 Webpack（二） -Randy Lu</a></li>
+  <li><a href="http://djyde.github.io/2015/08/31/vuejs-and-webpack-3/">Vue.js 和 Webpack（三） -Randy Lu</a></li>
+  <li><a href="https://laravist.com/series/vue-js-1-0-in-action-series">Vuejs 1.0 中文系列视频教程 -Laravist</a></li>
+  <li><a href="https://github.com/jsfront/src/blob/master/vuejs.md">Vuejs-QQ群 相关资料</a> 来自豪情</li>
+</ul>
+
+<h3 id="react">React</h3>
+
+<ul>
+  <li><a href="http://reactjs.cn/react/docs/thinking-in-react.html">深入理解 React -Thinking in React 中文版</a></li>
+  <li><a href="http://facebook.github.io/react/docs/thinking-in-react.html">Thinking in React</a></li>
+</ul>
+
+<h2 id="模块化">模块化</h2>
+
+<ul>
+  <li><a href="http://lishaopeng.com/2016/02/05/js-module/">后端程序员的 JavaScript 之旅 - 模块化（一）</a></li>
+  <li><a href="http://lishaopeng.com/2016/02/11/js-module2/">后端程序员的 JavaScript 之旅 - 模块化（二）</a></li>
+  <li><a href="http://lishaopeng.com/2016/02/19/js-module3/">后端程序员的 JavaScript 之旅 - 模块化（三）</a></li>
+</ul>
+
+<h2 id="技巧">技巧</h2>
+
+<ul>
+  <li><a href="https://segmentfault.com/a/1190000004453249">将footer固定在页面底部的实现方法</a></li>
+</ul>
+
+<h2 id="编辑器">编辑器</h2>
+
+<h3 id="atom-中常用插件">Atom 中常用插件</h3>
+
+<ul>
+  <li>auto-beautify</li>
+  <li>autoprefixer</li>
+  <li>block-comment</li>
+  <li>color-picker</li>
+  <li>docblockr</li>
+  <li>emmet</li>
+  <li>jquery-snippets</li>
+  <li>jshint</li>
+  <li>linter</li>
+  <li>linter-csslint</li>
+  <li>linter-htmlhint</li>
+  <li>minimap</li>
+  <li>minimap-git-diff</li>
+  <li>open-in-browser</li>
+  <li>uglify</li>
+  <li>active-power-mode</li>
+  <li>atom-terminal-panel</li>
+  <li>linter-scss-linter</li>
+</ul>
+
+<p>常用的主题：</p>
+
+<p>UI Theme: One Dark</p>
+
+<p>Syntax Theme: Atom Dark or One Dark</p>
+
+<h2 id="gitbook-及其插件">GitBook 及其插件</h2>
+
+<ul>
+  <li><a href="http://zhaoda.net/2015/11/09/gitbook-plugins/">Gitbook 的使用和常用插件 -赵达</a></li>
+  <li>
+    <p><a href="https://plugins.gitbook.com/plugin/expandable-chapters">gitbook-plugin-expandable-chapters</a></p>
+
+    <p>折叠左侧目录章节。</p>
+
+    <p><img src="http://ww4.sinaimg.cn/large/7011d6cfjw1f08kmplbj1j20gn05l0tk.jpg" alt="" /></p>
+  </li>
+</ul>
+
+<h2 id="chrome-插件">Chrome 插件</h2>
+
+<ul>
+  <li>
+    <p><a href="http://www.ituring.com.cn/minibook/950">Chrome扩展及应用开发 -图灵电子书</a></p>
+  </li>
+  <li><a href="https://www.zhihu.com/question/23228162#answer-28057391">有哪些鲜为人知却非常有意思、好用的 Chrome 扩展？ -知乎</a></li>
+  <li>
+    <p><a href="https://chrome.google.com/webstore/detail/dribbble-new-tab/hmhjbefkpednjogghoibpejdmemkinbn">Dribbble New Tab</a></p>
+
+    <p>新建 tab 时，显示 dribbble 上的精选作品。</p>
+  </li>
+</ul>
+
+<h2 id="other-blogs">Other blogs</h2>
+
+<ul>
+  <li>
+    <p><a href="http://www.dengzhr.com/">凳子_Joinery 邓智容  http://www.dengzhr.com/</a></p>
+  </li>
+  <li>
+    <p><a href="http://zhaoda.net/">赵达的个人网站 腾讯高级前端开发工程师</a></p>
+  </li>
+  <li>
+    <p><a href="http://djyde.github.io/">Randy</a></p>
+
+    <p>95年出生的全栈。卢涛南，英文名 Randy，用 djyde 这个ID混迹于网络。</p>
+  </li>
+  <li>
+    <p><a href="http://www.kancloud.cn/jsfront/month/82796">JS前端开发群月报 -豪情等人维护</a></p>
+  </li>
+</ul>
+
+<h2 id="comments">Comments</h2>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function() {
+        this.page.url = 'http://localhost:4000/collection/'; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://localhost:4000/collection/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+
+        s.src = '//gaohaoyang.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+:ET

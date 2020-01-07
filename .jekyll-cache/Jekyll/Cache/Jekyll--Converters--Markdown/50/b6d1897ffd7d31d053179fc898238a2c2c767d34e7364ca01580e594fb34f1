@@ -1,0 +1,131 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#语法" id="markdown-toc-语法">语法</a>    <ul>
+      <li><a href="#空白" id="markdown-toc-空白">空白</a></li>
+      <li><a href="#数字" id="markdown-toc-数字">数字</a></li>
+      <li><a href="#字符串" id="markdown-toc-字符串">字符串</a></li>
+      <li><a href="#语句" id="markdown-toc-语句">语句</a></li>
+      <li><a href="#表达式" id="markdown-toc-表达式">表达式</a></li>
+      <li><a href="#字面量" id="markdown-toc-字面量">字面量</a></li>
+      <li><a href="#函数" id="markdown-toc-函数">函数</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>记录一下读这本书过程中自己还需要知道的细节。</p>
+
+<h2 id="语法">语法</h2>
+
+<h3 id="空白">空白</h3>
+
+<p>这里说一下JavaScript的注释，一种是 <code class="highlighter-rouge">/* */</code> 包围的块注释，另一种是 <code class="highlighter-rouge">//</code> 开头的行注释。</p>
+
+<p>因为块注释的字符可能是JavaScript中正则表达式字面量，因此不是很安全，如：</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*
+    var rm_a = /a*/</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span>
+<span class="o">*</span><span class="sr">/</span><span class="err">
+</span></code></pre></div></div>
+
+<h3 id="数字">数字</h3>
+
+<p>可以存在指数部分，100和1e2完全相等</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">100</span> <span class="o">===</span> <span class="mi">1</span><span class="nx">e2</span> <span class="c1">// true</span>
+</code></pre></div></div>
+
+<h3 id="字符串">字符串</h3>
+
+<p>当年JavaScript被创建的时候，Unicode是16位字符集，因此JavaScript字符串是16位的。</p>
+
+<p>用双引号或单引号包裹。</p>
+
+<p>重点说一下转移字符<code class="highlighter-rouge">\</code></p>
+
+<p>反斜杠后面可以跟<code class="highlighter-rouge">"</code>, <code class="highlighter-rouge">'</code>, <code class="highlighter-rouge">\</code>, <code class="highlighter-rouge">/</code>, <code class="highlighter-rouge">b</code> (backspace), <code class="highlighter-rouge">f</code> (formfeed), <code class="highlighter-rouge">n</code>, <code class="highlighter-rouge">r</code> (carriage return), <code class="highlighter-rouge">t</code>, <code class="highlighter-rouge">u1234</code></p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">'</span><span class="s1">A</span><span class="dl">'</span> <span class="o">===</span> <span class="dl">'</span><span class="se">\</span><span class="s1">u0041</span><span class="dl">'</span> <span class="c1">// true</span>
+</code></pre></div></div>
+
+<h3 id="语句">语句</h3>
+
+<p>每个<code class="highlighter-rouge">&lt;script&gt;</code>标签的内容被一起抛到一个公共的全局名字空间中。</p>
+
+<p><code class="highlighter-rouge">{...}</code>代码块不会创建新的作用域，因此变量应该被定义在函数的头部，而不是在代码块中。</p>
+
+<p>下列值当做假：</p>
+
+<ul>
+  <li><code class="highlighter-rouge">false</code></li>
+  <li><code class="highlighter-rouge">null</code></li>
+  <li><code class="highlighter-rouge">undefined</code></li>
+  <li><code class="highlighter-rouge">''</code></li>
+  <li><code class="highlighter-rouge">0</code></li>
+  <li><code class="highlighter-rouge">NaN</code></li>
+</ul>
+
+<p>其他所有值都当做真</p>
+
+<p><code class="highlighter-rouge">for in</code>语句枚举对象的所有属性名（键名），使用<code class="highlighter-rouge">object.hasOwnProperty(variable)</code>来确定这个属性名是该对象成员，还是来自原型链。</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="nx">myvar</span> <span class="k">in</span> <span class="nx">obj</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="nx">myvar</span><span class="p">))</span> <span class="p">{</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="表达式">表达式</h3>
+
+<p>运算符优先级</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>运算符</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">.</code> <code class="highlighter-rouge">[]</code> <code class="highlighter-rouge">()</code></td>
+      <td>提取属性与调用函数</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">delete</code> <code class="highlighter-rouge">new</code> <code class="highlighter-rouge">typeof</code> <code class="highlighter-rouge">+</code> <code class="highlighter-rouge">-</code> <code class="highlighter-rouge">!</code></td>
+      <td>一元运算符</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">*</code> <code class="highlighter-rouge">/</code> <code class="highlighter-rouge">%</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">+</code> <code class="highlighter-rouge">-</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">&gt;=</code> <code class="highlighter-rouge">&lt;=</code> <code class="highlighter-rouge">&gt;</code> <code class="highlighter-rouge">&lt;</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">===</code> <code class="highlighter-rouge">!==</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">&amp;&amp;</code></td>
+      <td>逻辑与</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">||</code></td>
+      <td>逻辑或</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">?:</code></td>
+      <td>三目</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="字面量">字面量</h3>
+
+<h3 id="函数">函数</h3>
+:ET
